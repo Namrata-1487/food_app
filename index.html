@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/8.0.9/esm/ionicons.min.js">
     <title>Food App</title>
     <style>
         * {
@@ -50,10 +51,15 @@
         .phone-image {
             border-radius: 2em;
         }
+
+        .phone-image-container img {
+            box-shadow: 10px 10px 5px gray;
+        }
+
         .step-number {
-           color: orange;
-           border-radius: 50%;
-           border: 3px solid orange;
+            color: orange;
+            border-radius: 50%;
+            border: 5px solid orange;
         }
     </style>
 </head>
@@ -73,7 +79,7 @@
                     <ul class="navbar-nav ms-auto mt-2 mt-lg-0">
                         <li class="nav-item">
                             <a class="nav-link fs-5 px-4 fw-normal text-uppercase active" href="#"
-                                aria-current="page">food delivery
+                                aria-current="page">food delivery </a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link fs-5 px-4 fw-normal text-uppercase" href="#">how it works</a>
@@ -106,7 +112,7 @@
     </header>
     <section class="favourite-meals mt-5 text-center">
         <div class="container">
-            <h1 class="text-center text-uppercase">Good food fast - no fast food </h1>
+            <h1 class="text-center text-uppercase text-dark">Good food fast - no fast food </h1>
 
             <hr class="bg-warning m-auto my-4" style="height: 5px; background-color:orange; opacity: 1; width: 10rem;">
         </div><br>
@@ -144,8 +150,7 @@
                     <div class="card-body p-0 text-start py-4">
                         <h4 class="card-title text-uppercase pb-2">100% organic</h4>
                         <p class="card-text pe-3 fs-5">All our vegetables are fresh, organic and local. Animals are
-                            raised without
-                            added
+                            raised without added
                             hormones and anibiotics. Good for your health, the environment, and it taste also better!
                         </p>
                     </div>
@@ -189,23 +194,70 @@
 
             </div>
     </section>
-    <section class="how-it-works text-center container-fluid mt-5">
+    <section class="how-it-works text-center container-fluid pt-5 bg-light">
         <div class="container">
-            <h1 class="text-center text-uppercase">How it works &dash; simple as 1,2,3</h1>
+            <h1 class="text-center text-uppercase text-dark">How it works &dash; simple as 1,2,3</h1>
             <hr class="bg-warning m-auto my-4" style="height: 5px; background-color:orange; opacity: 1; width: 10rem;">
         </div>
         <br>
-        <div class="container text-center row d-flex m-0 p-5">
-            <div class="col-6"><img src="./Food APP.png" alt="phone image" class="img-fluid phone-image w-50 "></div>
+        <div class="container-fluid text-center justify-content-center align-items-center row d-flex m-0 p-5">
+            <div class="col-6 phone-image-container d-flex justify-content-center align-items-center">
+                <img src="./Food APP.png" alt="phone image" class="img-fluid phone-image w-50 ">
+            </div>
             <div class="col-6">
-                <span class="step-number fs-1 px-3 py-1">1</span> 
-                <p></p>
+                <div class="steps">
+                    <div class="d-flex text-left justify-content-left align-items-start mb-5">
+                        <span class="step-number fs-1 px-3">1</span>
+                        <h5 class="m-2 text-start">Choose plan that fits best for your need and sign-up today</h5>
+                    </div>
+                    <div class="d-flex text-left justify-content-left align-items-start mb-5">
+                        <span class="step-number fs-1 px-3">2</span>
+                        <h5 class="m-2 text-start">Pay for the plan and download the app</h5>
+                    </div>
+                    <div class="d-flex text-left justify-content-left align-items-start mb-5">
+                        <span class="step-number fs-1 px-3">3</span>
+                        <h5 class="m-2 text-start">You are done start ordering</h5>
+                    </div>
+                </div>
+                <div class="d-flex">
+                    <div class="col-6">
+                        <a href="#"><img src="./upscalemedia-transformed__2_-removebg-preview.png"
+                                alt="get it into google play" class="img-fluid w-75 h-100"></a>
+                    </div>
+                    <div class="col-6">
+                        <a href="#">
+                            <img src="./download_on_app_store-removebg-preview.png" alt="download on app store"
+                                class="img-fluid w-75 h-100"></a>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
+    <section class="cities-we-work text-center container-fluid">
+        <div class="container text-center pt-5">
+            <h1 class="text-center text-uppercase text-dark">We're currently in this cities</h1>
+            <hr class="bg-warning m-auto my-4" style="height: 5px; background-color:orange; opacity: 1; width: 10rem;">
+        </div>
+        <div class="row g-3 ">
+            <div class="col-3 text-start"><img src="./Commerce-Square-Lisbon.webp" alt="lisbon city"
+                    class="img-fluid w-100 h-75">
+                <p>Lisbon</p>
+                <div class="d-flex">
+                    <ion-icon name="person-circle-outline"></ion-icon>
 
-
-
+                </div>
+            </div>
+            <div class="col-3 text-start"><img src="./London - das grüne London entdecken-199835@2x.541f8de9.webp"
+                    alt="london city" class="img-fluid w-100 h-75">
+            </div>
+            <div class="col-3 text-start"><img src="./A9EB8D2D-C180-4F6C-877C3D4A44BBFF3F.jpg" alt="Berlin city"
+                    class="img-fluid w-100 h-75">
+            </div>
+            <div class="col-3 text-start"><img src="./shutterstock_2392291507_san_francisco_non_editorial.avif"
+                    alt="san francisco" class="img-fluid w-100 h-75">
+            </div>
+        </div>
+    </section>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
         crossorigin="anonymous"></script>
