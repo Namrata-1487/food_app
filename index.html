@@ -82,281 +82,360 @@
         .customers-review {
             background-image: url("./person\ taking\ slice\ of\ pizza.webp");
             background-position: center;
-            background-size:cover;
+            background-size: cover;
             background-repeat: no-repeat;
-            height: 100vh;
-            
+            height: auto;
         }
+
         .blur {
             background-color: rgba(0, 0, 0, 0.8);
             backdrop-filter: blur(2px);
-            height: 100vh;
+            height: 100%;
             z-index: 1;
+        }
+
+        blockquote {
+            font-style: italic;
+            line-height: 140%;
+            position: relative;
+            color: white;
+            height: 0;
+
+        }
+
+        blockquote::before {
+            content: "\201C";
+            font-size: 500%;
+            position: relative;
+            color: white;
+            margin: 0;
+            padding: 0;
+        }
+
+        .customers-review h5,
+        .image-grp p {
+            font-style: italic;
+            font-weight: 100 !important;
         }
     </style>
 </head>
 
-<body>
-    <!-- header section  -->
-    <header class="text-left d-flex justify-content-center flex-column p-5">
-        <nav class="navbar navbar-expand-sm navbar-white text-white position-absolute fixed-top">
-            <div class="container d-flex justify-content-between">
-                <img src="logo.png" alt="logo" class="img-fluid rounded-circle" width="80em">
-                <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#collapsibleNavId" aria-controls="collapsibleNavId" aria-expanded="false"
-                    aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="collapsibleNavId">
-                    <ul class="navbar-nav ms-auto mt-2 mt-lg-0">
-                        <li class="nav-item">
-                            <a class="nav-link px-4 fw-normal text-uppercase active" href="#" aria-current="page">food
-                                delivery </a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link fs-5 px-4 fw-normal text-uppercase" href="#">how it works</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link fs-5 px-4 fw-normal text-uppercase" href="#">our cities</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link fs-5 px-4 fw-normal text-uppercase" href="#">sign-up</a>
-                        </li>
-                    </ul>
-                </div>
+<!-- header section  -->
+<header class="text-left d-flex justify-content-center flex-column p-5">
+    <nav class="navbar navbar-expand-sm navbar-white text-white position-absolute fixed-top">
+        <div class="container d-flex justify-content-between">
+            <img src="logo.png" alt="logo" class="img-fluid rounded-circle" width="80em">
+            <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapsibleNavId" aria-controls="collapsibleNavId" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="collapsibleNavId">
+                <ul class="navbar-nav ms-auto mt-2 mt-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link fs-5 px-4 fw-normal text-uppercase active" href="#" aria-current="page">food
+                            delivery </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link fs-5 px-4 fw-normal text-uppercase" href="#">how it works</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link fs-5 px-4 fw-normal text-uppercase" href="#">our cities</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link fs-5 px-4 fw-normal text-uppercase" href="#">sign-up</a>
+                    </li>
+                </ul>
             </div>
-        </nav>
+        </div>
+    </nav>
 
-        <div class="section-1">
-            <h1 class="text-uppercase text-left text-white">Goodbye junk food</h1>
-            <h1 class=" text-left text-white">Hello super healthy food</h1>
-            <div class="row justify-content-center align-items-center g-2 w-25 mt-3">
-                <div class="col-6 text-center ">
-                    <button type="button" class="btn btn-white btn-outline-warning rounded-pill w-100 ">I'm
-                        Hungry</button>
-                </div>
-                <div class="col-6 text-center">
-                    <button type="button" class="btn btn-white btn-outline-warning rounded-pill w-100">Show me
-                        More</button>
-                </div>
+    <div class="section-1">
+        <h1 class="text-uppercase text-left text-white">Goodbye junk food</h1>
+        <h1 class=" text-left text-white">Hello super healthy food</h1>
+        <div class="row justify-content-center align-items-center g-2 w-25 mt-3">
+            <div class="col-6 text-center ">
+                <button type="button" class="btn btn-white btn-outline-warning rounded-pill w-100 ">I'm
+                    Hungry</button>
+            </div>
+            <div class="col-6 text-center">
+                <button type="button" class="btn btn-white btn-outline-warning rounded-pill w-100">Show me
+                    More</button>
             </div>
         </div>
-    </header>
-    <section class="favourite-meals mt-5 text-center">
-        <div class="container">
-            <h1 class="text-center text-uppercase">Good food fast - no fast food </h1>
+    </div>
+</header>
+<section class="favourite-meals mt-5 text-center">
+    <div class="container">
+        <h1 class="text-center text-uppercase">Good food fast - no fast food </h1>
 
-            <hr class="bg-warning m-auto my-4" style="height: 3px; background-color:orange; opacity: 1; width: 10rem;">
-        </div><br>
-        <p class="p-0 m-0 fs-5">Hello we are Omnifood, your new premium food delivery service.We know you are always
-            busy.
-        </p>
-        <p class="p-0 m-0 fs-5">No time for cooking. So let us take care of that, we are really good at it, we promise.
-        </p>
-        <div class="container">
-            <div class="row g-3 mt-3">
-                <div class="card col mx-2 py-3 border-0 p-2">
-                    <img class="card-img-top my-3" style="width: 5rem; height: 5rem;" src="./infinity.png"
-                        alt="infinity" />
-                    <div class="card-body p-0 text-start py-4">
-                        <h4 class="card-title text-uppercase pb-2">up to 365 days/year</h4>
-                        <p class="card-text pe-3 fs-5">Never cook again! We really mean that. Our subscription plan
-                            include upto
-                            365
-                            days/year coverage. You can also choose to order more flexibly if that's your style.</p>
-                    </div>
+        <hr class="bg-warning m-auto my-4" style="height: 3px; background-color:orange; opacity: 1; width: 10rem;">
+    </div><br>
+    <p class="p-0 m-0 fs-5">Hello we are Omnifood, your new premium food delivery service.We know you are always
+        busy.
+    </p>
+    <p class="p-0 m-0 fs-5">No time for cooking. So let us take care of that, we are really good at it, we promise.
+    </p>
+    <div class="container">
+        <div class="row g-3 mt-3">
+            <div class="card col mx-2 py-3 border-0 p-2">
+                <img class="card-img-top my-3" style="width: 5rem; height: 5rem;" src="./infinity.png" alt="infinity" />
+                <div class="card-body p-0 text-start py-4">
+                    <h4 class="card-title text-uppercase pb-2">up to 365 days/year</h4>
+                    <p class="card-text pe-3 fs-5">Never cook again! We really mean that. Our subscription plan
+                        include upto
+                        365
+                        days/year coverage. You can also choose to order more flexibly if that's your style.</p>
                 </div>
-                <div class="card col mx-2 py-3 border-0 p-2">
-                    <img class="card-img-top my-3" style="width: 5rem; height: 5rem;" src="./alarm.png" alt="alarm" />
-                    <div class="card-body p-0 text-start py-4">
-                        <h4 class="card-title text-uppercase pb-2">ready in 20 minutes</h4>
-                        <p class="card-text pe-3 fs-5">You're ony twenty minute away from your delicious and super
-                            healthy meals
-                            delivered right to your home. We work with the best chefs in each town to ensure that you're
-                            100% happy.</p>
-                    </div>
+            </div>
+            <div class="card col mx-2 py-3 border-0 p-2">
+                <img class="card-img-top my-3" style="width: 5rem; height: 5rem;" src="./alarm.png" alt="alarm" />
+                <div class="card-body p-0 text-start py-4">
+                    <h4 class="card-title text-uppercase pb-2">ready in 20 minutes</h4>
+                    <p class="card-text pe-3 fs-5">You're ony twenty minute away from your delicious and super
+                        healthy meals
+                        delivered right to your home. We work with the best chefs in each town to ensure that you're
+                        100% happy.</p>
                 </div>
-                <div class="card col mx-2 py-3 border-0 p-2">
-                    <img class="card-img-top my-3" style="width: 5rem; height: 5rem;" src="./burder-drink.png"
-                        alt="burger and drink " />
-                    <div class="card-body p-0 text-start py-4">
-                        <h4 class="card-title text-uppercase pb-2">100% organic</h4>
-                        <p class="card-text pe-3 fs-5">All our vegetables are fresh, organic and local. Animals are
-                            raised without added
-                            hormones and anibiotics. Good for your health, the environment, and it taste also better!
-                        </p>
-                    </div>
+            </div>
+            <div class="card col mx-2 py-3 border-0 p-2">
+                <img class="card-img-top my-3" style="width: 5rem; height: 5rem;" src="./burder-drink.png"
+                    alt="burger and drink " />
+                <div class="card-body p-0 text-start py-4">
+                    <h4 class="card-title text-uppercase pb-2">100% organic</h4>
+                    <p class="card-text pe-3 fs-5">All our vegetables are fresh, organic and local. Animals are
+                        raised without added
+                        hormones and anibiotics. Good for your health, the environment, and it taste also better!
+                    </p>
                 </div>
-                <div class="card col mx-2 py-3 border-0 p-2">
-                    <img class="card-img-top my-3" style="width: 5rem; height: 5rem;" src="./vart.png" alt="cart" />
-                    <div class="card-body p-0 text-start py-4">
-                        <h4 class="card-title text-uppercase pb-2">order anything</h4>
-                        <p class="card-text pe-3 fs-5">We dont limit your creativity, which means you can order whatever
-                            you feel
-                            like.
-                            You can also choose from our menu containing over 100 delicious meals. It's up to you!</p>
-                    </div>
+            </div>
+            <div class="card col mx-2 py-3 border-0 p-2">
+                <img class="card-img-top my-3" style="width: 5rem; height: 5rem;" src="./vart.png" alt="cart" />
+                <div class="card-body p-0 text-start py-4">
+                    <h4 class="card-title text-uppercase pb-2">order anything</h4>
+                    <p class="card-text pe-3 fs-5">We dont limit your creativity, which means you can order whatever
+                        you feel
+                        like.
+                        You can also choose from our menu containing over 100 delicious meals. It's up to you!</p>
                 </div>
             </div>
         </div>
-    </section>
-    <section class="cities text-center container-fluid">
-        <div class="section-2">
-            <div class="row">
-                <div class="col-4 p-0">
-                    <img src="./download (1).jpeg" alt="food-1" class="img-fluid w-100 h-100 p-0">
-                </div>
-                <div class="col-4 p-0">
-                    <img src="./download (2).jfif" alt="food-1" class="img-fluid w-100 h-100 p-0">
-                </div>
-                <div class="col-4 p-0">
-                    <img src="./download (3).jfif" alt="food-1" class="img-fluid w-100 h-100 p-0">
-                </div>
+    </div>
+</section>
+<section class="cities text-center container-fluid">
+    <div class="section-2">
+        <div class="row">
+            <div class="col-4 p-0">
+                <img src="./download (1).jpeg" alt="food-1" class="img-fluid w-100 h-100 p-0">
             </div>
-            <div class="row">
-                <div class="col-4 p-0">
-                    <img src="./download (1).jfif" alt="food-1" class="img-fluid w-100 h-100 p-0">
-                </div>
-                <div class="col-4 p-0">
-                    <img src="./images (1).jfif" alt="food-1" class="img-fluid w-100 h-100 p-0">
-                </div>
-                <div class="col-4 p-0">
-                    <img src="./images (2).jfif" alt="food-1" class="img-fluid w-100 h-100 p-0">
-                </div>
+            <div class="col-4 p-0">
+                <img src="./download (2).jfif" alt="food-1" class="img-fluid w-100 h-100 p-0">
+            </div>
+            <div class="col-4 p-0">
+                <img src="./download (3).jfif" alt="food-1" class="img-fluid w-100 h-100 p-0">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-4 p-0">
+                <img src="./download (1).jfif" alt="food-1" class="img-fluid w-100 h-100 p-0">
+            </div>
+            <div class="col-4 p-0">
+                <img src="./images (1).jfif" alt="food-1" class="img-fluid w-100 h-100 p-0">
+            </div>
+            <div class="col-4 p-0">
+                <img src="./images (2).jfif" alt="food-1" class="img-fluid w-100 h-100 p-0">
+            </div>
 
-            </div>
-    </section>
-    <section class="how-it-works text-center container-fluid pt-5 bg-light">
-        <div class="container">
-            <h1 class="text-center text-uppercase">How it works &dash; simple as 1,2,3</h1>
-            <hr class="bg-warning m-auto my-4" style="height: 3px; background-color:orange; opacity: 1; width: 10rem;">
         </div>
-        <br>
-        <div class="container-fluid text-center justify-content-center align-items-center row d-flex m-0 p-5">
-            <div class="col-6 phone-image-container d-flex justify-content-center align-items-center">
-                <img src="./Food APP.png" alt="phone image" class="img-fluid phone-image w-50 ">
-            </div>
-            <div class="col-6">
-                <div class="steps">
-                    <div class="d-flex text-left justify-content-left align-items-start mb-5">
-                        <span class="step-number fs-1 px-3">1</span>
-                        <h5 class="m-2 text-start">Choose plan that fits best for your need and sign-up today</h5>
-                    </div>
-                    <div class="d-flex text-left justify-content-left align-items-start mb-5">
-                        <span class="step-number fs-1 px-3">2</span>
-                        <h5 class="m-2 text-start">Pay for the plan and download the app</h5>
-                    </div>
-                    <div class="d-flex text-left justify-content-left align-items-start mb-5">
-                        <span class="step-number fs-1 px-3">3</span>
-                        <h5 class="m-2 text-start">You are done start ordering</h5>
-                    </div>
-                </div>
-                <div class="d-flex">
-                    <div class="col-6">
-                        <a href="#"><img src="./upscalemedia-transformed__2_-removebg-preview.png"
-                                alt="get it into google play" class="img-fluid w-75 h-100"></a>
-                    </div>
-                    <div class="col-6">
-                        <a href="#">
-                            <img src="./download_on_app_store-removebg-preview.png" alt="download on app store"
-                                class="img-fluid w-75 h-100"></a>
-                    </div>
-                </div>
-            </div>
+</section>
+<section class="how-it-works text-center container-fluid pt-5 bg-light">
+    <div class="container">
+        <h1 class="text-center text-uppercase">How it works &dash; simple as 1,2,3</h1>
+        <hr class="bg-warning m-auto my-4" style="height: 3px; background-color:orange; opacity: 1; width: 10rem;">
+    </div>
+    <br>
+    <div class="container-fluid text-center justify-content-center align-items-center row d-flex m-0 p-5">
+        <div class="col-6 phone-image-container d-flex justify-content-center align-items-center">
+            <img src="./Food APP.png" alt="phone image" class="img-fluid phone-image w-50 ">
         </div>
-    </section>
-    <section class="cities-we-work container w-100">
-        <div class="container text-center pt-5">
-            <h1 class="text-center text-uppercase">We're currently in this cities</h1>
-            <hr class="bg-warning m-auto my-4" style="height: 3px; background-color:orange; opacity: 1; width: 10rem;">
-        </div>
-        <div class="row g-5 ">
-            <div class="col-3 text-start"><img src="./Commerce-Square-Lisbon.webp" alt="lisbon city"
-                    class="img-fluid w-100 h-50 py-3">
-                <h3 class="text-uppercase">Lisbon</h3>
-                <div class="icon-grp px-3">
-                    <div class="d-flex text-start g-3"> <ion-icon name="person-circle-outline" class="icon"></ion-icon>
-                        <p class="text-start m-0 ps-3">1600+ Happy Eaters</p>
-                    </div>
-                    <div class="d-flex text-start g-3"> <ion-icon name="star-half-outline" class="icon"></ion-icon>
-                        <p class="text-start m-0 ps-3">50+ Chefs</p>
-                    </div>
-                    <div class="d-flex text-start g-3"> <ion-icon name="logo-twitter" class="icon"></ion-icon>
-                        <p class="text-start m-0 ps-3"><a href="mailto:@omnifood_li"
-                                class="text-decoration-underline">@omnifood_li</a></p>
-                    </div>
+        <div class="col-6">
+            <div class="steps">
+                <div class="d-flex text-left justify-content-left align-items-start mb-5">
+                    <span class="step-number fs-1 px-3">1</span>
+                    <h5 class="m-2 text-start">Choose plan that fits best for your need and sign-up today</h5>
+                </div>
+                <div class="d-flex text-left justify-content-left align-items-start mb-5">
+                    <span class="step-number fs-1 px-3">2</span>
+                    <h5 class="m-2 text-start">Pay for the plan and download the app</h5>
+                </div>
+                <div class="d-flex text-left justify-content-left align-items-start mb-5">
+                    <span class="step-number fs-1 px-3">3</span>
+                    <h5 class="m-2 text-start">You are done start ordering</h5>
                 </div>
             </div>
-            <div class="col-3 text-start"><img src="./London - das grüne London entdecken-199835@2x.541f8de9.webp"
-                    alt="london city" class="img-fluid w-100 h-50 py-3">
-                <h3 class="text-uppercase">london</h3>
-                <div class="icon-grp px-3">
-                    <div class="d-flex text-start g-3"> <ion-icon name="person-circle-outline" class="icon"></ion-icon>
-                        <p class="text-start m-0 ps-3">1600+ Happy Eaters</p>
-                    </div>
-                    <div class="d-flex text-start g-3"> <ion-icon name="star-half-outline" class="icon"></ion-icon>
-                        <p class="text-start m-0 ps-3">50+ Chefs</p>
-                    </div>
-                    <div class="d-flex text-start g-3"> <ion-icon name="logo-twitter" class="icon"></ion-icon>
-                        <p class="text-start m-0 ps-3"><a href="mailto:@omnifood_Id"
-                                class="text-decoration-underline">@omnifood_Id</a>
-                        </p>
-                    </div>
+            <div class="d-flex">
+                <div class="col-6">
+                    <a href="#"><img src="./upscalemedia-transformed__2_-removebg-preview.png"
+                            alt="get it into google play" class="img-fluid w-75 h-100"></a>
                 </div>
-            </div>
-            <div class="col-3 text-start"><img src="./A9EB8D2D-C180-4F6C-877C3D4A44BBFF3F.jpg" alt="Berlin city"
-                    class="img-fluid w-100 h-50 py-3">
-                <h3 class="text-uppercase">Berlin</h3>
-                <div class="icon-grp px-3">
-                    <div class="d-flex text-start g-3"> <ion-icon name="person-circle-outline" class="icon"></ion-icon>
-                        <p class="text-start m-0 ps-3">1400+ Happy Eaters</p>
-                    </div>
-                    <div class="d-flex text-start g-3"> <ion-icon name="star-half-outline" class="icon"></ion-icon>
-                        <p class="text-start m-0 ps-3">70+ Chefs</p>
-                    </div>
-                    <div class="d-flex text-start g-3"> <ion-icon name="logo-twitter" class="icon"></ion-icon>
-                        <p class="text-start m-0 ps-3"><a href="mailto:@omnifood_br"
-                                class="text-decoration-underline">@omnifood_br</a>
-                        </p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-3 text-start"><img src="./shutterstock_2392291507_san_francisco_non_editorial.avif"
-                    alt="san francisco" class="img-fluid w-100 h-50 py-3">
-                <h3 class="text-uppercase">san-francisco</h3>
-                <div class="icon-grp px-3">
-                    <div class="d-flex text-start g-3"> <ion-icon name="person-circle-outline" class="icon"></ion-icon>
-                        <p class="text-start m-0 ps-3">1800+ Happy Eaters</p>
-                    </div>
-                    <div class="d-flex text-start g-3"> <ion-icon name="star-half-outline" class="icon"></ion-icon>
-                        <p class="text-start m-0 ps-3">50+ Chefs</p>
-                    </div>
-                    <div class="d-flex text-start g-3"> <ion-icon name="logo-twitter" class="icon"></ion-icon>
-                        <p class="text-start m-0 ps-3"><a href="mailto:@omnifood_sf"
-                                class="text-decoration-underline">@omnifood_sf</a>
-                        </p>
-                    </div>
+                <div class="col-6">
+                    <a href="#">
+                        <img src="./download_on_app_store-removebg-preview.png" alt="download on app store"
+                            class="img-fluid w-75 h-100"></a>
                 </div>
             </div>
         </div>
-    </section>
+    </div>
+</section>
+<section class="cities-we-work container w-100">
+    <div class="container text-center pt-5">
+        <h1 class="text-center text-uppercase">We're currently in this cities</h1>
+        <hr class="bg-warning m-auto my-4" style="height: 3px; background-color:orange; opacity: 1; width: 10rem;">
+    </div>
+    <div class="row g-5 ">
+        <div class="col-3 text-start"><img src="./Commerce-Square-Lisbon.webp" alt="lisbon city"
+                class="img-fluid w-100 h-50 py-3">
+            <h3 class="text-uppercase">Lisbon</h3>
+            <div class="icon-grp px-3">
+                <div class="d-flex text-start g-3"> <ion-icon name="person-circle-outline" class="icon"></ion-icon>
+                    <p class="text-start m-0 ps-3">1600+ Happy Eaters</p>
+                </div>
+                <div class="d-flex text-start g-3"> <ion-icon name="star-half-outline" class="icon"></ion-icon>
+                    <p class="text-start m-0 ps-3">50+ Chefs</p>
+                </div>
+                <div class="d-flex text-start g-3"> <ion-icon name="logo-twitter" class="icon"></ion-icon>
+                    <p class="text-start m-0 ps-3"><a href="mailto:@omnifood_li"
+                            class="text-decoration-underline">@omnifood_li</a></p>
+                </div>
+            </div>
+        </div>
+        <div class="col-3 text-start"><img src="./London - das grüne London entdecken-199835@2x.541f8de9.webp"
+                alt="london city" class="img-fluid w-100 h-50 py-3">
+            <h3 class="text-uppercase">london</h3>
+            <div class="icon-grp px-3">
+                <div class="d-flex text-start g-3"> <ion-icon name="person-circle-outline" class="icon"></ion-icon>
+                    <p class="text-start m-0 ps-3">1600+ Happy Eaters</p>
+                </div>
+                <div class="d-flex text-start g-3"> <ion-icon name="star-half-outline" class="icon"></ion-icon>
+                    <p class="text-start m-0 ps-3">50+ Chefs</p>
+                </div>
+                <div class="d-flex text-start g-3"> <ion-icon name="logo-twitter" class="icon"></ion-icon>
+                    <p class="text-start m-0 ps-3"><a href="mailto:@omnifood_Id"
+                            class="text-decoration-underline">@omnifood_Id</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="col-3 text-start"><img src="./A9EB8D2D-C180-4F6C-877C3D4A44BBFF3F.jpg" alt="Berlin city"
+                class="img-fluid w-100 h-50 py-3">
+            <h3 class="text-uppercase">Berlin</h3>
+            <div class="icon-grp px-3">
+                <div class="d-flex text-start g-3"> <ion-icon name="person-circle-outline" class="icon"></ion-icon>
+                    <p class="text-start m-0 ps-3">1400+ Happy Eaters</p>
+                </div>
+                <div class="d-flex text-start g-3"> <ion-icon name="star-half-outline" class="icon"></ion-icon>
+                    <p class="text-start m-0 ps-3">70+ Chefs</p>
+                </div>
+                <div class="d-flex text-start g-3"> <ion-icon name="logo-twitter" class="icon"></ion-icon>
+                    <p class="text-start m-0 ps-3"><a href="mailto:@omnifood_br"
+                            class="text-decoration-underline">@omnifood_br</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="col-3 text-start"><img src="./shutterstock_2392291507_san_francisco_non_editorial.avif"
+                alt="san francisco" class="img-fluid w-100 h-50 py-3">
+            <h3 class="text-uppercase">san-francisco</h3>
+            <div class="icon-grp px-3">
+                <div class="d-flex text-start g-3"> <ion-icon name="person-circle-outline" class="icon"></ion-icon>
+                    <p class="text-start m-0 ps-3">1800+ Happy Eaters</p>
+                </div>
+                <div class="d-flex text-start g-3"> <ion-icon name="star-half-outline" class="icon"></ion-icon>
+                    <p class="text-start m-0 ps-3">50+ Chefs</p>
+                </div>
+                <div class="d-flex text-start g-3">
+                    <ion-icon name="logo-twitter" class="icon"></ion-icon>
+                    <p class="text-start m-0 ps-3"><a href="mailto:@omnifood_sf"
+                            class="text-decoration-underline">@omnifood_sf</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
 
-    <section class="customers-review container-fluid bg-light p-0">
-        <div class="container-fluid p-0 blur">
-            <div class="container text-center pt-5">
+<section class="customers-review container-fluid row m-0 p-0">
+    <div class="container-fluid blur row justify-content-center px-0 m-0 py-5">
+        <div class="container d-flex row justify-content-center align-items-center m-0 ">
+            <div class="container text-center ">
                 <h1 class="text-center text-uppercase text-white">Our costomer can't live without us </h1>
                 <hr class="bg-warning m-auto my-4"
                     style="height: 3px; background-color:orange; opacity: 1; width: 10rem;">
             </div>
 
+            <div class="m-0 container px-5 row g-5 mb-5">
+                <div class="col-4">
+                    <blockquote></blockquote>
+                    <h5 class="text-white font-italic">Omnifood is just awesome! I just launched a startup which leaves
+                        me
+                        with no time
+                        for cooking, so Omnifood is a life-saver. Now that I got used to it, couldn't live without my
+                        daily
+                        meals!</h5>
+                    <div class="image-grp row align-items-center mt-3">
+                        <div class="col-2"><img src="./20.jpg" alt="customer 1" class="img-fluid rounded-circle"
+                                width="50em"></div>
+                        <div class="col-10">
+                            <p class="font-italic text-white m-0">Alberto Duncan</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <blockquote></blockquote>
+                    <h5 class="text-white">Inexpensive, healthy and great-tasting meals, delivered right to my home. We
+                        have
+                        lots of food delivery here in Lisbon, but no one comes even close to Omnifood. Me and my family
+                        are
+                        so in love! </h5>
+                    <div class="image-grp row align-items-center mt-3">
+                        <div class="col-2"><img src="./4.jpg" alt="customer 1" class="img-fluid rounded-circle"
+                                width="50em"></div>
+                        <div class="col-10">
+                            <p class="font-italic text-white m-0">Joana Silva</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <blockquote></blockquote>
+                    <h5 class="text-white">
+                        I was looking for a quick and easy food delivery service in San Francisco. I tried a lot of them
+                        and
+                        ended up with Omnifood. Best food delivery service in the Bay Area. Keep up the great work!
+                    </h5>
+                    <div class="image-grp row align-items-center mt-3">
+                        <div class="col-2"><img src="./14.jpg" alt="customer 1" class="img-fluid rounded-circle"
+                                width="50em"></div>
+                        <div class="col-10">
+                            <p class="font-italic text-white m-0">Milton Chapman</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-    </section>
+    </div>
+</section>
+<section class="signupsection container-fluid row m-0 py-5">
+    <div class="container text-center ">
+        <h1 class="text-center text-uppercase ">Start eating healthy today</h1>
+        <hr class="bg-warning m-auto my-4" style="height: 3px; background-color:orange; opacity: 1; width: 10rem;">
+    </div>
+</section>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-        crossorigin="anonymous"></script>
-    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
-    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </body>
 
 </html>
