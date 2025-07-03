@@ -60,18 +60,18 @@
         }
 
         .step-number {
-            color: orange;
+            color: #e67e22;
             border-radius: 50%;
-            border: 5px solid orange;
+            border: 5px solid #e67e22;
         }
 
         .icon {
-            color: orange !important;
+            color: #e67e22 !important;
             font-size: 1.5rem;
         }
 
         .cities-we-work a {
-            color: orange !important;
+            color: #e67e22 !important;
         }
 
         .container h1 {
@@ -116,6 +116,21 @@
         .image-grp p {
             font-style: italic;
             font-weight: 100 !important;
+        }
+
+        .card-text {
+            font-size: 4rem;
+            color: #e67e22;
+            font-weight: 100 !important;
+        }
+
+        .btn-warning {
+            background-color: #e67e22 !important;
+            border-color: #e67e22 !important;
+        }
+
+        .card {
+            box-shadow: 5px 10px 10px rgba(0, 0, 0, 0.1);
         }
     </style>
 </head>
@@ -169,7 +184,7 @@
     <div class="container">
         <h1 class="text-center text-uppercase">Good food fast - no fast food </h1>
 
-        <hr class="bg-warning m-auto my-4" style="height: 3px; background-color:orange; opacity: 1; width: 10rem;">
+        <hr class="bg-warning m-auto my-4" style="height: 3px; background-color:#e67e22 ; opacity: 1; width: 10rem;">
     </div><br>
     <p class="p-0 m-0 fs-5">Hello we are Omnifood, your new premium food delivery service.We know you are always
         busy.
@@ -251,7 +266,7 @@
 <section class="how-it-works text-center container-fluid pt-5 bg-light">
     <div class="container">
         <h1 class="text-center text-uppercase">How it works &dash; simple as 1,2,3</h1>
-        <hr class="bg-warning m-auto my-4" style="height: 3px; background-color:orange; opacity: 1; width: 10rem;">
+        <hr class="bg-warning m-auto my-4" style="height: 3px; background-color:#e67e22 ; opacity: 1; width: 10rem;">
     </div>
     <br>
     <div class="container-fluid text-center justify-content-center align-items-center row d-flex m-0 p-5">
@@ -290,7 +305,7 @@
 <section class="cities-we-work container w-100">
     <div class="container text-center pt-5">
         <h1 class="text-center text-uppercase">We're currently in this cities</h1>
-        <hr class="bg-warning m-auto my-4" style="height: 3px; background-color:orange; opacity: 1; width: 10rem;">
+        <hr class="bg-warning m-auto my-4" style="height: 3px; background-color:#e67e22 ; opacity: 1; width: 10rem;">
     </div>
     <div class="row g-5 ">
         <div class="col-3 text-start"><img src="./Commerce-Square-Lisbon.webp" alt="lisbon city"
@@ -363,14 +378,13 @@
         </div>
     </div>
 </section>
-
 <section class="customers-review container-fluid row m-0 p-0">
     <div class="container-fluid blur row justify-content-center px-0 m-0 py-5">
         <div class="container d-flex row justify-content-center align-items-center m-0 ">
             <div class="container text-center ">
                 <h1 class="text-center text-uppercase text-white">Our costomer can't live without us </h1>
                 <hr class="bg-warning m-auto my-4"
-                    style="height: 3px; background-color:orange; opacity: 1; width: 10rem;">
+                    style="height: 3px; background-color:#e67e22 ; opacity: 1; width: 10rem;">
             </div>
 
             <div class="m-0 container px-5 row g-5 mb-5">
@@ -424,10 +438,132 @@
         </div>
     </div>
 </section>
-<section class="signupsection container-fluid row m-0 py-5">
+<section class="signupsection container-fluid row m-0 py-5 bg-light">
     <div class="container text-center ">
         <h1 class="text-center text-uppercase ">Start eating healthy today</h1>
-        <hr class="bg-warning m-auto my-4" style="height: 3px; background-color:orange; opacity: 1; width: 10rem;">
+        <hr class="bg-warning m-auto my-4" style="height: 3px; background-color:#e67e22 ; opacity: 1; width: 10rem;">
+    </div>
+    <div class="container m-auto p-5">
+        <div class="row g-5">
+            <div class="col-4">
+                <div class="card border-0 p-0">
+                    <div class="card-body p-0">
+                        <div class="grp p-3">
+                            <h4 class="card-title text-uppercase">Premium</h4>
+                            <p class="card-text">$399 <sub>/month</sub></p>
+                            <p>That's only 13.905$ per meal</p>
+                        </div>
+                        <hr class="m-0">
+                        <div class="grp1 m-0 p-4 text-center">
+                            <div class="d-flex align-items-center mb-2">
+                                <ion-icon name="checkmark-outline" class="icon me-2"></ion-icon>
+                                <p class="m-0 fs-5">1 Meal per day</p>
+                            </div>
+                            <div class="d-flex align-items-center mb-2">
+                                <ion-icon name="checkmark-outline" class="icon me-2"></ion-icon>
+                                <p class="m-0 fs-5">Order 24*7</p>
+                            </div>
+                            <div class="d-flex align-items-center mb-2">
+                                <ion-icon name="checkmark-outline" class="icon me-2"></ion-icon>
+                                <p class="m-0 fs-5">1 meal per day</p>
+                            </div>
+                            <div class="d-flex align-items-center mb-2">
+                                <ion-icon name="checkmark-outline" class="icon me-2"></ion-icon>
+                                <p class="m-0 fs-5">1 meal per day</p>
+                            </div>
+                        </div>
+                        <hr class="m-0">
+                        <div class="btn-section justify-content-center align-items-center d-flex p-3">
+                            <button type="button" name="signUp" id="Sign-Up"
+                                class="btn btn-warning rounded-pill px-5 fs-4 text-white">
+                                <a href="#" class="text-white"> Sign up</a> </button>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-4 ">
+                <div class="card border-0 p-0">
+                    <div class="card-body p-0">
+                        <div class="grp p-3">
+                            <h4 class="card-title text-uppercase">Premium</h4>
+                            <p class="card-text">$399 <sub>/month</sub></p>
+                            <p>That's only 13.905$ per meal</p>
+                        </div>
+                        <hr class="m-0">
+                        <div class="grp1 m-0 p-4 text-center">
+                            <div class="d-flex align-items-center mb-2">
+                                <ion-icon name="checkmark-outline" class="icon me-2"></ion-icon>
+                                <p class="m-0 fs-5">1 Meal per day</p>
+                            </div>
+                            <div class="d-flex align-items-center mb-2">
+                                <ion-icon name="checkmark-outline" class="icon me-2"></ion-icon>
+                                <p class="m-0 fs-5">Order 24*7</p>
+                            </div>
+                            <div class="d-flex align-items-center mb-2">
+                                <ion-icon name="checkmark-outline" class="icon me-2"></ion-icon>
+                                <p class="m-0 fs-5">1 meal per day</p>
+                            </div>
+                            <div class="d-flex align-items-center mb-2">
+                                <ion-icon name="checkmark-outline" class="icon me-2"></ion-icon>
+                                <p class="m-0 fs-5">1 meal per day</p>
+                            </div>
+                        </div>
+                        <hr class="m-0">
+                        <div class="btn-section justify-content-center align-items-center d-flex p-3">
+                            <!-- <div class="d-grid"> -->
+                            <button type="button" name="signUp" id="Sign-Up"
+                                class="btn btn-warning rounded-pill px-5 fs-4 text-white">
+                                <a href="#" class="text-white"> Sign up</a>
+                            </button>
+                            <!-- </div> -->
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-4 ">
+                <div class="card border-0 p-0">
+                    <div class="card-body p-0">
+                        <div class="grp p-3">
+                            <h4 class="card-title text-uppercase">Premium</h4>
+                            <p class="card-text">$399 <sub>/month</sub></p>
+                            <p>That's only 13.905$ per meal</p>
+                        </div>
+                        <hr class="m-0">
+                        <div class="grp1 m-0 p-4 text-center">
+                            <div class="d-flex align-items-center mb-2">
+                                <ion-icon name="checkmark-outline" class="icon me-2"></ion-icon>
+                                <p class="m-0 fs-5">1 Meal per day</p>
+                            </div>
+                            <div class="d-flex align-items-center mb-2">
+                                <ion-icon name="checkmark-outline" class="icon me-2"></ion-icon>
+                                <p class="m-0 fs-5">Order 24*7</p>
+                            </div>
+                            <div class="d-flex align-items-center mb-2">
+                                <ion-icon name="checkmark-outline" class="icon me-2"></ion-icon>
+                                <p class="m-0 fs-5">1 meal per day</p>
+                            </div>
+                            <div class="d-flex align-items-center mb-2">
+                                <ion-icon name="checkmark-outline" class="icon me-2"></ion-icon>
+                                <p class="m-0 fs-5">1 meal per day</p>
+                            </div>
+                        </div>
+                        <hr class="m-0">
+                        <div class="btn-section justify-content-center align-items-center d-flex p-3">
+                            <!-- <div class="d-grid"> -->
+                            <button type="button" name="signUp" id="Sign-Up"
+                                class="btn btn-warning rounded-pill px-5 fs-4 text-white">
+                                <a href="#" class="text-white"> Sign up</a> </button>
+                            <!-- </div> -->
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
     </div>
 </section>
 
